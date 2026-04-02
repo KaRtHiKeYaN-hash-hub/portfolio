@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="samplecon.css">
+</head>
+<body>
+
+
+<!-- SPLIT LAYOUT -->
+<main style="flex:1;display:flex;flex-direction:column">
+<div class="split">
+ 
+  <!-- INFO -->
+  <aside class="info">
+ 
+    <div class="avail-box">
+      <span class="dot"></span>
+      Available for new projects — 2026
+    </div>
+ 
+    <div>
+      <p class="i-label">Email</p>
+      <p class="i-val"><a href="studentkarthi2004@gmail.com">studentkarthi2004@gmail.com</a></p>
+    </div>
+ 
+    <div>
+      <p class="i-label">Phone</p>
+      <p class="i-val"><a href="tel:+917812811562">+91 7812811562</a></p>
+    </div>
+ 
+    <div>
+      <p class="i-label">Location</p>
+      <p class="i-val">Tiruchirappalli, India<br><span class="muted">Remote-friendly worldwide</span></p>
+    </div>
+ 
+    <div>
+      <p class="i-label">Connect</p>
+      <div class="pills">
+        <a class="pill red" href="#" target="_blank">GitHub</a>
+        <a class="pill" href="#" target="_blank">LinkedIn</a>
+        <!-- <a class="pill" href="#" target="_blank">Twitter</a> -->
+        <!-- <a class="pill" href="#" target="_blank">Resume ↗</a> -->
+      </div>
+    </div>
+ 
+    <div>
+      <p class="i-label">Tech Stack</p>
+      <div class="stack-grid">
+        <span class="stack-item">python</span>
+        <span class="stack-item">html & css</span>
+        <span class="stack-item">javaScript</span>
+        <span class="stack-item">SQL</span>
+        <!-- <span class="stack-item">Docker</span> -->
+        <!-- <span class="stack-item">AWS</span> -->
+        <span class="stack-item">MongoDB</span>
+        <!-- <span class="stack-item">GraphQL</span> -->
+      </div>
+    </div>
+ 
+  </aside>
+ 
+  <!-- VERT DIVIDER -->
+  <div class="vdiv" aria-hidden="true"></div>
+ 
+  <!-- FORM -->
+  <section class="form-panel">
+    <div class="f-head">
+      <h2>Send a Message</h2>
+      <p>Fill out the form and I'll get back to you as soon as possible.</p>
+    </div>
+ 
+    <form id="cForm" novalidate>
+      <div class="fgrid">
+ 
+        <div class="fg">
+          <label for="fn">First Name <span class="req">*</span></label>
+          <input type="text" id="fn" placeholder="John" autocomplete="given-name" required/>
+          <span class="ferr" id="fnE">Enter your first name.</span>
+        </div>
+ 
+        <div class="fg">
+          <label for="ln">Last Name</label>
+          <input type="text" id="ln" placeholder="Doe" autocomplete="family-name"/>
+        </div>
+ 
+        <div class="fg">
+          <label for="em">Email Address <span class="req">*</span></label>
+          <input type="email" id="em" placeholder="john@example.com" autocomplete="email" required/>
+          <span class="ferr" id="emE">Enter a valid email.</span>
+        </div>
+ 
+        <div class="fg">
+          <label for="sub">Subject</label>
+          <select id="sub">
+            <option value="" disabled selected>Select a topic…</option>
+            <option>Freelance Project</option>
+            <option>Full-time Opportunity</option>
+            <option>Collaboration</option>
+            <!-- <option>Techni</option> -->
+            <option>Other</option>
+          </select>
+        </div>
+ 
+        <div class="fg">
+          <label for="bud">Budget (optional)</label>
+          <input type="text" id="bud" placeholder="e.g. $2,000 – $5,000"/>
+        </div>
+ 
+        <div class="fg">
+          <label for="tl">Timeline (optional)</label>
+          <input type="text" id="tl" placeholder="e.g. 4–6 weeks"/>
+        </div>
+ 
+        <div class="fg full">
+          <label for="msg">Message <span class="req">*</span></label>
+          <textarea id="msg" placeholder="Tell me about your project, goals, and what you're looking to build…" required></textarea>
+          <span class="ferr" id="msgE">Please write a message.</span>
+        </div>
+ 
+        <div class="fg full chk-row">
+          <input type="checkbox" id="agr"/>
+          <label for="agr" class="chk-label">
+            I understand my information will be used solely to respond to this inquiry and won't be shared with third parties.
+          </label>
+        </div>
+ 
+      </div>
+ 
+      <button class="btn" id="bsend" type="submit">
+        <span class="btn-t">Send Message</span>
+        <svg class="btn-a" width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true">
+          <path d="M2 8.5h13M9.5 3l5.5 5.5L9.5 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+ 
+      <div class="ok" id="okMsg" role="alert">
+        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true">
+          <path d="M3 8.5l3.5 3.5 7.5-7.5" stroke="#D90012" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Message sent — I'll reply within 24 hours. Thank you!
+      </div>
+    </form>
+  </section>
+ 
+</div>
+</main>
+    <!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item"><span>✦</span>Full Stack Developer</span>
+    <span class="ticker-item"><span>✦</span>React · Node.js · TypeScript</span>
+    <span class="ticker-item"><span>✦</span>Open to Opportunities</span>
+    <span class="ticker-item"><span>✦</span>Chennai, India</span>
+    <span class="ticker-item"><span>✦</span>Available for Freelance</span>
+    <span class="ticker-item"><span>✦</span>Full Stack Developer</span>
+    <span class="ticker-item"><span>✦</span>React · Node.js · TypeScript</span>
+    <span class="ticker-item"><span>✦</span>Open to Opportunities</span>
+    <span class="ticker-item"><span>✦</span>Chennai, India</span>
+    <span class="ticker-item"><span>✦</span>Available for Freelance</span>
+  </div>
+</div>
+ 
+</body>
+
+<script>
+
+
+ 
+/* ── FORM VALIDATION ── */
+const form  = document.getElementById('cForm');
+const btn   = document.getElementById('bsend');
+const okMsg = document.getElementById('okMsg');
+ 
+function setErr(id, errId, show) {
+  document.getElementById(id).classList.toggle('err', show);
+  document.getElementById(errId).classList.toggle('on', show);
+}
+function isEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()); }
+ 
+['fn','em','msg'].forEach(id => {
+  document.getElementById(id).addEventListener('input', function() {
+    this.classList.remove('err');
+    ({fn:'fnE', em:'emE', msg:'msgE'}[id] &&
+      document.getElementById({fn:'fnE', em:'emE', msg:'msgE'}[id]).classList.remove('on'));
+  });
+});
+ 
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  const fn  = document.getElementById('fn').value.trim();
+  const em  = document.getElementById('em').value.trim();
+  const msg = document.getElementById('msg').value.trim();
+  let ok = true;
+ 
+  if (!fn)          { setErr('fn','fnE',true);  ok = false; } else { setErr('fn','fnE',false); }
+  if (!isEmail(em)) { setErr('em','emE',true);  ok = false; } else { setErr('em','emE',false); }
+  if (!msg)         { setErr('msg','msgE',true); ok = false; } else { setErr('msg','msgE',false); }
+  if (!ok) return;
+ 
+  btn.disabled = true;
+  btn.querySelector('.btn-t').textContent = 'Sending…';
+  okMsg.classList.remove('on');
+ 
+  /* Replace setTimeout with your real fetch/EmailJS call */
+  setTimeout(() => {
+    form.reset();
+    btn.disabled = false;
+    btn.querySelector('.btn-t').textContent = 'Send Message';
+    okMsg.classList.add('on');
+    setTimeout(() => okMsg.classList.remove('on'), 6000);
+  }, 1400);
+});
+</script>
+</body>
+</html>
